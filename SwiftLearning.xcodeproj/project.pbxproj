@@ -103,7 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				E61F4E7B2063862700446B0C /* Tool */,
-				E6D069B42067AC8E0083A292 /* Category */,
+				E681305A20689CBD007986BE /* Category */,
 			);
 			path = Expand;
 			sourceTree = "<group>";
@@ -152,35 +152,27 @@
 		E64542F3205F9B090025FB40 /* SwiftLearning */ = {
 			isa = PBXGroup;
 			children = (
-				E6D069B72067AD380083A292 /* Vender */,
 				E61F4E79206385E900446B0C /* Config */,
 				E61F4E712063847D00446B0C /* Class */,
 				E61F4E772063857B00446B0C /* Expand */,
-				E6D069B82067AD3F0083A292 /* Vender */,
+				E681305920689CA5007986BE /* Vender */,
 				E61F4E762063855600446B0C /* Resource */,
 			);
 			path = SwiftLearning;
 			sourceTree = "<group>";
 		};
-		E6D069B42067AC8E0083A292 /* Category */ = {
+		E681305920689CA5007986BE /* Vender */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vender;
+			sourceTree = "<group>";
+		};
+		E681305A20689CBD007986BE /* Category */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Category;
-			sourceTree = "<group>";
-		};
-		E6D069B72067AD380083A292 /* Vender */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Vender;
-			sourceTree = "<group>";
-		};
-		E6D069B82067AD3F0083A292 /* Vender */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Vender;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -380,7 +372,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8YBVZL288W;
+				DEVELOPMENT_TEAM = QZKDBZ56ET;
 				INFOPLIST_FILE = "$(SRCROOT)/SwiftLearning/Config/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.claudechoi.swiftLearning.SwiftLearning;
@@ -395,7 +387,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8YBVZL288W;
+				DEVELOPMENT_TEAM = QZKDBZ56ET;
 				INFOPLIST_FILE = "$(SRCROOT)/SwiftLearning/Config/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.claudechoi.swiftLearning.SwiftLearning;
