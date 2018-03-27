@@ -13,12 +13,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    public class func shared() -> AppDelegate {
+        return UIApplication.shared.delegate as! AppDelegate
+    }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         self.window = UIWindow(frame: UIScreen.main.bounds)
-        self.window?.rootViewController = BaseTabbarVC()
-        self.window?.makeKeyAndVisible()
+        self.checkLogin()
         
         return true
     }
@@ -45,6 +47,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-
+    func checkLogin() {
+        if MyTool.isLogin() {
+            self.setupSystem()
+        } else {
+            self.gotoLogin()
+        }
+    }
+    
+    func gotoLogin() {
+        let currentVC = MyTool.topViewController()
+        if currentVC?.isKind(of: LoginVC.self) == true {
+            return
+        }
+        self.window?.rootViewController = LoginVC()
+        self.window?.makeKeyAndVisible()
+    }
+    
+    func setupSystem() {
+        self.window?.rootViewController = BaseTabbarVC()
+        self.window?.makeKeyAndVisible()
+    }
+    
 }
 

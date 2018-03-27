@@ -26,8 +26,19 @@ struct UserDefaultKeys {
     }
 }
 
+let screenWidth = UIScreen.main.bounds.width
+let screenHeight = UIScreen.main.bounds.height
+/**
+ 测试账户信息
+ */
+struct UserAccountInfo {
+    let userName = "Claude"
+    let password = "123456"
+}
+
 class MyTool: NSObject {
     
+    // 是否登录
     class func isLogin () -> Bool {
         let userId : String? = MyTool.readValueForKey(key: UserDefaultKeys.LoginInfo().userId) as? String
         if userId != nil {
@@ -36,6 +47,7 @@ class MyTool: NSObject {
         return false
     }
     
+    // 写入userDefault
     class func writeValueForKey(value:Any?, key:String?) {
         if let saveValue = value, let saveKey = key {
             let userDefault = UserDefaults.standard
@@ -43,9 +55,94 @@ class MyTool: NSObject {
         }
     }
     
-    class func readValueForKey(key:String) -> Any? {
-        let userDefault = UserDefaults.standard
-        return userDefault.object(forKey: key)
+    // 读取userDefault
+    class func readValueForKey(key:String?) -> Any? {
+        if let readKey = key {
+            let userDefault = UserDefaults.standard
+            return userDefault.object(forKey: readKey)
+        } else {
+            return nil
+        }
     }
     
+    // 删除userDefault
+    class func removeValueForKey(key:String?) {
+        if let readKey = key {
+            let userDefault = UserDefaults.standard
+            userDefault.removeObject(forKey: readKey)
+        }
+    }
+    
+    // toast
+    class func showToast(str:String?) {
+        if let showStr = str {
+            let window = UIApplication.shared.keyWindow!
+            let label = UILabel(frame: CGRect(x: 0, y: 0, width: screenWidth, height: 0))
+            label.text = showStr
+            label.textColor = UIColor.white
+            label.font = UIFont.systemFont(ofSize: 14)
+            label.backgroundColor = UIColor(white: 0, alpha: 0.6)
+            label.layer.cornerRadius = 6
+            label.layer.masksToBounds = true
+            label.sizeToFit()
+            label.center = window.center
+            label.alpha = 0
+            window.addSubview(label)
+            
+            UIView.animate(withDuration: 0.2, animations: {
+                label.alpha = 1
+            }, completion: { (isDone:Bool) in
+                UIView.animate(withDuration: 0.2, delay: 3, options: .curveEaseInOut, animations: {
+                    label.alpha = 0
+                }, completion: { (isDone:Bool) in
+                    label.removeFromSuperview()
+                })//
+                
+            })//
+            
+        }
+    }
+    
+    // 找到当前显示的window
+    class func getCurrentWindow() -> UIWindow? {
+        // 找到当前显示的UIWindow
+        var window: UIWindow? = UIApplication.shared.keyWindow
+        /**
+         window有一个属性：windowLevel
+         当 windowLevel == UIWindowLevelNormal 的时候，表示这个window是当前屏幕正在显示的window
+         */
+        if window?.windowLevel != UIWindowLevelNormal {
+            for tempWindow in UIApplication.shared.windows {
+                if tempWindow.windowLevel == UIWindowLevelNormal {
+                    window = tempWindow
+                    break
+                }
+            }
+        }
+        return window
+    }
+    
+    // 递归找最上面的VC
+    @objc class func topViewController() -> UIViewController? {
+        return self.topViewControllerWithRootViewController(viewController: self.getCurrentWindow()?.rootViewController)
+    }
+    
+    @objc private class func topViewControllerWithRootViewController(viewController:UIViewController?) -> UIViewController? {
+        if viewController == nil {
+            return nil
+        }
+        
+        if viewController?.presentedViewController != nil {
+            return self.topViewControllerWithRootViewController(viewController:viewController?.presentedViewController!)
+        }
+        else if viewController?.isKind(of: UITabBarController.self) == true {
+            return self.topViewControllerWithRootViewController(viewController:(viewController as! UITabBarController).selectedViewController)
+        }
+        else if viewController?.isKind(of: UINavigationController.self) == true {
+            return self.topViewControllerWithRootViewController(viewController:(viewController as! UINavigationController).visibleViewController)
+        }
+        else {
+            return viewController;
+        }
+    }
 }
