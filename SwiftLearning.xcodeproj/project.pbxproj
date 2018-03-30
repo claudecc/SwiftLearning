@@ -17,6 +17,13 @@
 		E645430920623A2A0025FB40 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E645430820623A2A0025FB40 /* HomeVC.swift */; };
 		E645430B20623D0F0025FB40 /* MeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E645430A20623D0F0025FB40 /* MeVC.swift */; };
 		E645430D20623E5E0025FB40 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E645430C20623E5E0025FB40 /* BaseVC.swift */; };
+		E681305C206BA59A007986BE /* BannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E681305B206BA59A007986BE /* BannerVC.swift */; };
+		E681305E206BA661007986BE /* SegmentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E681305D206BA661007986BE /* SegmentVC.swift */; };
+		E69D1246206E4D6E001A7F36 /* BannerNormalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69D1245206E4D6E001A7F36 /* BannerNormalCell.swift */; };
+		E69D1248206E4D90001A7F36 /* BannerNormalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69D1247206E4D90001A7F36 /* BannerNormalView.swift */; };
+		E69D124A206E4E69001A7F36 /* BannerFocusCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69D1249206E4E69001A7F36 /* BannerFocusCell.swift */; };
+		E69D124C206E4E79001A7F36 /* BannerFocusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69D124B206E4E79001A7F36 /* BannerFocusView.swift */; };
+		E69D124E206E4ED0001A7F36 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69D124D206E4ED0001A7F36 /* LoadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +39,13 @@
 		E645430820623A2A0025FB40 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		E645430A20623D0F0025FB40 /* MeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeVC.swift; sourceTree = "<group>"; };
 		E645430C20623E5E0025FB40 /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
+		E681305B206BA59A007986BE /* BannerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerVC.swift; sourceTree = "<group>"; };
+		E681305D206BA661007986BE /* SegmentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentVC.swift; sourceTree = "<group>"; };
+		E69D1245206E4D6E001A7F36 /* BannerNormalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerNormalCell.swift; sourceTree = "<group>"; };
+		E69D1247206E4D90001A7F36 /* BannerNormalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerNormalView.swift; sourceTree = "<group>"; };
+		E69D1249206E4E69001A7F36 /* BannerFocusCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerFocusCell.swift; sourceTree = "<group>"; };
+		E69D124B206E4E79001A7F36 /* BannerFocusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerFocusView.swift; sourceTree = "<group>"; };
+		E69D124D206E4ED0001A7F36 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +74,9 @@
 		E61F4E722063848C00446B0C /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				E645430820623A2A0025FB40 /* HomeVC.swift */,
+				E681305F206BA679007986BE /* Controller */,
+				E6813060206BA69A007986BE /* Model */,
+				E6813061206BA69F007986BE /* View */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -68,7 +84,9 @@
 		E61F4E732063849300446B0C /* Me */ = {
 			isa = PBXGroup;
 			children = (
-				E645430A20623D0F0025FB40 /* MeVC.swift */,
+				E6813064206BA6E2007986BE /* Controller */,
+				E6813063206BA6DC007986BE /* Model */,
+				E6813062206BA6D6007986BE /* View */,
 			);
 			path = Me;
 			sourceTree = "<group>";
@@ -121,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				E61F4E7F20638AC300446B0C /* MyTool.swift */,
+				E69D124D206E4ED0001A7F36 /* LoadingView.swift */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -128,7 +147,9 @@
 		E61F4E7C206389EE00446B0C /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				E61F4E7D20638A7F00446B0C /* LoginVC.swift */,
+				E6813067206BA6FB007986BE /* Controller */,
+				E6813066206BA6F7007986BE /* Model */,
+				E6813065206BA6F1007986BE /* View */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -173,6 +194,78 @@
 			children = (
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		E681305F206BA679007986BE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E645430820623A2A0025FB40 /* HomeVC.swift */,
+				E681305B206BA59A007986BE /* BannerVC.swift */,
+				E681305D206BA661007986BE /* SegmentVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E6813060206BA69A007986BE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E6813061206BA69F007986BE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E69D1245206E4D6E001A7F36 /* BannerNormalCell.swift */,
+				E69D1247206E4D90001A7F36 /* BannerNormalView.swift */,
+				E69D1249206E4E69001A7F36 /* BannerFocusCell.swift */,
+				E69D124B206E4E79001A7F36 /* BannerFocusView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E6813062206BA6D6007986BE /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E6813063206BA6DC007986BE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E6813064206BA6E2007986BE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E645430A20623D0F0025FB40 /* MeVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E6813065206BA6F1007986BE /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E6813066206BA6F7007986BE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E6813067206BA6FB007986BE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E61F4E7D20638A7F00446B0C /* LoginVC.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,13 +340,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				E645430B20623D0F0025FB40 /* MeVC.swift in Sources */,
+				E69D124A206E4E69001A7F36 /* BannerFocusCell.swift in Sources */,
+				E681305C206BA59A007986BE /* BannerVC.swift in Sources */,
+				E69D124C206E4E79001A7F36 /* BannerFocusView.swift in Sources */,
 				E645430D20623E5E0025FB40 /* BaseVC.swift in Sources */,
 				E61F4E7E20638A7F00446B0C /* LoginVC.swift in Sources */,
 				E61F4E8020638AC300446B0C /* MyTool.swift in Sources */,
 				E645430920623A2A0025FB40 /* HomeVC.swift in Sources */,
+				E69D124E206E4ED0001A7F36 /* LoadingView.swift in Sources */,
 				E61F4E70206260A300446B0C /* BaseNavVC.swift in Sources */,
 				E645430720623A080025FB40 /* BaseTabbarVC.swift in Sources */,
+				E681305E206BA661007986BE /* SegmentVC.swift in Sources */,
+				E69D1246206E4D6E001A7F36 /* BannerNormalCell.swift in Sources */,
 				E64542F5205F9B0A0025FB40 /* AppDelegate.swift in Sources */,
+				E69D1248206E4D90001A7F36 /* BannerNormalView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

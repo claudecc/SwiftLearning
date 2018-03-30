@@ -24,7 +24,7 @@ class HomeVC: BaseVC, UITableViewDelegate, UITableViewDataSource {
     }
     
     func setupUI() {
-        listArray = NSMutableArray(array: ["第一个","第二个"])
+        listArray = NSMutableArray(array: ["banner","segmentVC","瀑布流","红包雨","物理动画"])
         tableView = UITableView(frame: self.view.frame, style: .plain)
         self.view.addSubview(tableView)
         tableView.delegate = self

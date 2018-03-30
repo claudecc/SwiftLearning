@@ -103,25 +103,6 @@ class MyTool: NSObject {
         }
     }
     
-    // 找到当前显示的window
-    class func getCurrentWindow() -> UIWindow? {
-        // 找到当前显示的UIWindow
-        var window: UIWindow? = UIApplication.shared.keyWindow
-        /**
-         window有一个属性：windowLevel
-         当 windowLevel == UIWindowLevelNormal 的时候，表示这个window是当前屏幕正在显示的window
-         */
-        if window?.windowLevel != UIWindowLevelNormal {
-            for tempWindow in UIApplication.shared.windows {
-                if tempWindow.windowLevel == UIWindowLevelNormal {
-                    window = tempWindow
-                    break
-                }
-            }
-        }
-        return window
-    }
-    
     // 递归找最上面的VC
     @objc class func topViewController() -> UIViewController? {
         return self.topViewControllerWithRootViewController(viewController: self.getCurrentWindow()?.rootViewController)
@@ -145,4 +126,25 @@ class MyTool: NSObject {
             return viewController;
         }
     }
+    
+    // 找到当前显示的window
+    private class func getCurrentWindow() -> UIWindow? {
+        // 找到当前显示的UIWindow
+        var window: UIWindow? = UIApplication.shared.keyWindow
+        /**
+         window有一个属性：windowLevel
+         当 windowLevel == UIWindowLevelNormal 的时候，表示这个window是当前屏幕正在显示的window
+         */
+        if window?.windowLevel != UIWindowLevelNormal {
+            for tempWindow in UIApplication.shared.windows {
+                if tempWindow.windowLevel == UIWindowLevelNormal {
+                    window = tempWindow
+                    break
+                }
+            }
+        }
+        return window
+    }
+    
+    
 }
