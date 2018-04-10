@@ -17,6 +17,7 @@
 		E645430920623A2A0025FB40 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E645430820623A2A0025FB40 /* HomeVC.swift */; };
 		E645430B20623D0F0025FB40 /* MeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E645430A20623D0F0025FB40 /* MeVC.swift */; };
 		E645430D20623E5E0025FB40 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E645430C20623E5E0025FB40 /* BaseVC.swift */; };
+		E64CDE22207CA94B00FE2237 /* Interface.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64CDE21207CA94B00FE2237 /* Interface.swift */; };
 		E681305C206BA59A007986BE /* BannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E681305B206BA59A007986BE /* BannerVC.swift */; };
 		E681305E206BA661007986BE /* SegmentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E681305D206BA661007986BE /* SegmentVC.swift */; };
 		E69D1246206E4D6E001A7F36 /* BannerNormalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69D1245206E4D6E001A7F36 /* BannerNormalCell.swift */; };
@@ -42,6 +43,7 @@
 		E645430820623A2A0025FB40 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		E645430A20623D0F0025FB40 /* MeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeVC.swift; sourceTree = "<group>"; };
 		E645430C20623E5E0025FB40 /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
+		E64CDE21207CA94B00FE2237 /* Interface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interface.swift; sourceTree = "<group>"; };
 		E681305B206BA59A007986BE /* BannerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerVC.swift; sourceTree = "<group>"; };
 		E681305D206BA661007986BE /* SegmentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentVC.swift; sourceTree = "<group>"; };
 		E69D1245206E4D6E001A7F36 /* BannerNormalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerNormalCell.swift; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 			children = (
 				E61F4E7F20638AC300446B0C /* MyTool.swift */,
 				E69D124D206E4ED0001A7F36 /* LoadingView.swift */,
+				E64CDE21207CA94B00FE2237 /* Interface.swift */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -439,6 +442,7 @@
 				E69D124E206E4ED0001A7F36 /* LoadingView.swift in Sources */,
 				E61F4E70206260A300446B0C /* BaseNavVC.swift in Sources */,
 				E645430720623A080025FB40 /* BaseTabbarVC.swift in Sources */,
+				E64CDE22207CA94B00FE2237 /* Interface.swift in Sources */,
 				E681305E206BA661007986BE /* SegmentVC.swift in Sources */,
 				E69D1246206E4D6E001A7F36 /* BannerNormalCell.swift in Sources */,
 				E64542F5205F9B0A0025FB40 /* AppDelegate.swift in Sources */,
