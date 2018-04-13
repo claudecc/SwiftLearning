@@ -24,7 +24,7 @@ class HomeVC: BaseVC, UITableViewDelegate, UITableViewDataSource {
     }
     
     func setupUI() {
-        listArray = NSMutableArray(array: ["banner","segmentVC","瀑布流","红包雨","物理动画"])
+        listArray = NSMutableArray(array: [["name":"banner","vc":"BannerVC"],["name":"segmentVC","vc":"SegmentVC"],["name":"瀑布流","vc":""],["name":"红包雨","vc":""],["name":"物理动画","vc":""]])
         tableView = UITableView(frame: self.view.frame, style: .plain)
         self.view.addSubview(tableView)
         tableView.delegate = self
@@ -37,9 +37,18 @@ class HomeVC: BaseVC, UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: .default, reuseIdentifier: "cellId")
-        cell.textLabel?.text = self.listArray.object(at: indexPath.row) as? String
+        let dict:NSDictionary = self.listArray.object(at: indexPath.row) as! NSDictionary
+        cell.textLabel?.text = dict.object(forKey: "name") as? String
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        let dict:NSDictionary = self.listArray.object(at: indexPath.row) as! NSDictionary
+        let vcName = dict.object(forKey: "vc") as! String
+        let vcClass = NSClassFromString("SwiftLearning."+vcName) as! BaseVC.Type
+        let vc:BaseVC = vcClass.init()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 
 }

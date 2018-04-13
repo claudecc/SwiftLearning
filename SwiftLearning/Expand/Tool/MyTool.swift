@@ -40,6 +40,7 @@ class MyTool: NSObject {
     
     // 是否登录
     class func isLogin () -> Bool {
+        return true
         let userId : String? = MyTool.readValueForKey(key: UserDefaultKeys.LoginInfo().userId) as? String
         if userId != nil {
             return true
