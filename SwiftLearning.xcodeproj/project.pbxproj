@@ -25,6 +25,7 @@
 		E69D124A206E4E69001A7F36 /* BannerFocusCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69D1249206E4E69001A7F36 /* BannerFocusCell.swift */; };
 		E69D124C206E4E79001A7F36 /* BannerFocusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69D124B206E4E79001A7F36 /* BannerFocusView.swift */; };
 		E69D124E206E4ED0001A7F36 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69D124D206E4ED0001A7F36 /* LoadingView.swift */; };
+		E6D4170F2080AED400303490 /* MeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D4170E2080AED400303490 /* MeHeaderView.swift */; };
 		F97AA96D9C5F90B6A870E2CB /* Pods_SwiftLearning.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E739BBD5C66769986F966B9C /* Pods_SwiftLearning.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +52,7 @@
 		E69D1249206E4E69001A7F36 /* BannerFocusCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerFocusCell.swift; sourceTree = "<group>"; };
 		E69D124B206E4E79001A7F36 /* BannerFocusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerFocusView.swift; sourceTree = "<group>"; };
 		E69D124D206E4ED0001A7F36 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		E6D4170E2080AED400303490 /* MeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeHeaderView.swift; sourceTree = "<group>"; };
 		E739BBD5C66769986F966B9C /* Pods_SwiftLearning.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftLearning.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -254,6 +256,7 @@
 		E6813062206BA6D6007986BE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E6D4170E2080AED400303490 /* MeHeaderView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -431,6 +434,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6D4170F2080AED400303490 /* MeHeaderView.swift in Sources */,
 				E645430B20623D0F0025FB40 /* MeVC.swift in Sources */,
 				E69D124A206E4E69001A7F36 /* BannerFocusCell.swift in Sources */,
 				E681305C206BA59A007986BE /* BannerVC.swift in Sources */,
