@@ -6,4 +6,5 @@ target 'SwiftLearning' do
 	pod 'MJRefresh'
 	pod 'MJExtension'
 	pod 'Masonry'
+	pod 'SnapKit'
 end
