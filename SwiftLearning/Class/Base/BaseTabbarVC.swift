@@ -16,14 +16,14 @@ class BaseTabbarVC: UITabBarController {
         // Do any additional setup after loading the view.
         
         let homeVC = HomeVC()
-        homeVC.title = "Home"
         homeVC.tabBarItem = UITabBarItem(tabBarSystemItem: .topRated, tag: 1)
+        homeVC.title = "Home"
         let homeNav = BaseNavVC(rootViewController: homeVC)
         self.addChildViewController(homeNav)
         
         let meVC = MeVC()
-        meVC.title = "Me"
         meVC.tabBarItem = UITabBarItem(tabBarSystemItem: .contacts, tag: 2)
+        meVC.title = "Me"
         let meNav = BaseNavVC(rootViewController: meVC)
         self.addChildViewController(meNav)
         

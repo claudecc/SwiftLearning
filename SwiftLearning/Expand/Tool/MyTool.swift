@@ -36,6 +36,13 @@ struct UserAccountInfo {
     let password = "123456"
 }
 
+struct PointCalculate {
+    var maxX = 10.0
+    func isSafeValue(x:Double) -> Bool {
+        return (x >= 0) && (x < self.maxX);
+    }
+}
+
 class MyTool: NSObject {
     
     // 是否登录

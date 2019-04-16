@@ -24,7 +24,7 @@ class HomeVC: BaseVC, UITableViewDelegate, UITableViewDataSource {
     }
     
     func setupUI() {
-        listArray = NSMutableArray(array: [["name":"banner","vc":"BannerVC"],["name":"segmentVC","vc":"SegmentVC"],["name":"瀑布流","vc":""],["name":"红包雨","vc":""],["name":"物理动画","vc":""]])
+        listArray = NSMutableArray(array: [["name":"banner","vc":"BannerVC"],["name":"segmentVC","vc":"SegmentVC"],["name":"瀑布流","vc":""],["name":"红包雨","vc":""],["name":"物理动画","vc":""],["name":"测试","vc":"TestVC"]])
         tableView = UITableView(frame: self.view.frame, style: .plain)
         self.view.addSubview(tableView)
         tableView.delegate = self
@@ -46,8 +46,12 @@ class HomeVC: BaseVC, UITableViewDelegate, UITableViewDataSource {
         tableView.deselectRow(at: indexPath, animated: true)
         let dict:NSDictionary = self.listArray.object(at: indexPath.row) as! NSDictionary
         let vcName = dict.object(forKey: "vc") as! String
+        if vcName.isEmpty {
+            return
+        }
         let vcClass = NSClassFromString("SwiftLearning."+vcName) as! BaseVC.Type
         let vc:BaseVC = vcClass.init()
+        vc.hidesBottomBarWhenPushed = true
         self.navigationController?.pushViewController(vc, animated: true)
     }
 
