@@ -27,6 +27,7 @@
 		E69D124A206E4E69001A7F36 /* BannerFocusCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69D1249206E4E69001A7F36 /* BannerFocusCell.swift */; };
 		E69D124C206E4E79001A7F36 /* BannerFocusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69D124B206E4E79001A7F36 /* BannerFocusView.swift */; };
 		E69D124E206E4ED0001A7F36 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69D124D206E4ED0001A7F36 /* LoadingView.swift */; };
+		E6B36AD722DF3153001DC458 /* XDNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B36AD622DF3153001DC458 /* XDNetwork.swift */; };
 		E6D4170F2080AED400303490 /* MeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D4170E2080AED400303490 /* MeHeaderView.swift */; };
 		F97AA96D9C5F90B6A870E2CB /* Pods_SwiftLearning.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E739BBD5C66769986F966B9C /* Pods_SwiftLearning.framework */; };
 /* End PBXBuildFile section */
@@ -56,6 +57,7 @@
 		E69D1249206E4E69001A7F36 /* BannerFocusCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerFocusCell.swift; sourceTree = "<group>"; };
 		E69D124B206E4E79001A7F36 /* BannerFocusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerFocusView.swift; sourceTree = "<group>"; };
 		E69D124D206E4ED0001A7F36 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		E6B36AD622DF3153001DC458 /* XDNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDNetwork.swift; sourceTree = "<group>"; };
 		E6D4170E2080AED400303490 /* MeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeHeaderView.swift; sourceTree = "<group>"; };
 		E739BBD5C66769986F966B9C /* Pods_SwiftLearning.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftLearning.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -176,6 +178,7 @@
 		E61F4E772063857B00446B0C /* Expand */ = {
 			isa = PBXGroup;
 			children = (
+				E6B36AD522DF3110001DC458 /* Network */,
 				E61F4E7B2063862700446B0C /* Tool */,
 				E681305A20689CBD007986BE /* Category */,
 			);
@@ -328,6 +331,14 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		E6B36AD522DF3110001DC458 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				E6B36AD622DF3153001DC458 /* XDNetwork.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -403,26 +414,26 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-SwiftLearning/Pods-SwiftLearning-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
-				"${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework",
-				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
-				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
-				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftLearning/Pods-SwiftLearning-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/PullToRefresher/PullToRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJExtension.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PullToRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftLearning/Pods-SwiftLearning-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftLearning/Pods-SwiftLearning-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B3A0916E5B8A06DCF84BEB16 /* [CP] Check Pods Manifest.lock */ = {
@@ -454,6 +465,7 @@
 				E645430B20623D0F0025FB40 /* MeVC.swift in Sources */,
 				E69D124A206E4E69001A7F36 /* BannerFocusCell.swift in Sources */,
 				E681305C206BA59A007986BE /* BannerVC.swift in Sources */,
+				E6B36AD722DF3153001DC458 /* XDNetwork.swift in Sources */,
 				E69D124C206E4E79001A7F36 /* BannerFocusView.swift in Sources */,
 				E645430D20623E5E0025FB40 /* BaseVC.swift in Sources */,
 				E61F4E7E20638A7F00446B0C /* LoginVC.swift in Sources */,
@@ -598,6 +610,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.claudechoi.swiftLearning.SwiftLearning;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ENABLE_BATCH_MODE = NO;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -615,6 +628,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.claudechoi.swiftLearning.SwiftLearning;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ENABLE_BATCH_MODE = NO;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

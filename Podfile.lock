@@ -1,52 +1,36 @@
 PODS:
-  - AFNetworking (3.2.0):
-    - AFNetworking/NSURLSession (= 3.2.0)
-    - AFNetworking/Reachability (= 3.2.0)
-    - AFNetworking/Security (= 3.2.0)
-    - AFNetworking/Serialization (= 3.2.0)
-    - AFNetworking/UIKit (= 3.2.0)
-  - AFNetworking/NSURLSession (3.2.0):
-    - AFNetworking/Reachability
-    - AFNetworking/Security
-    - AFNetworking/Serialization
-  - AFNetworking/Reachability (3.2.0)
-  - AFNetworking/Security (3.2.0)
-  - AFNetworking/Serialization (3.2.0)
-  - AFNetworking/UIKit (3.2.0):
-    - AFNetworking/NSURLSession
-  - Masonry (1.1.0)
-  - MJExtension (3.0.13)
-  - MJRefresh (3.1.15.3)
-  - SDWebImage (4.3.3):
-    - SDWebImage/Core (= 4.3.3)
-  - SDWebImage/Core (4.3.3)
-  - SnapKit (4.0.0)
+  - Alamofire (4.4.0)
+  - Kingfisher (5.6.0)
+  - PullToRefresher (3.1)
+  - RxSwift (4.5.0)
+  - SnapKit (4.0.1)
+  - SwiftyJSON (3.1.4)
 
 DEPENDENCIES:
-  - AFNetworking
-  - Masonry
-  - MJExtension
-  - MJRefresh
-  - SDWebImage
-  - SnapKit
+  - Alamofire (~> 4.4.0)
+  - Kingfisher (~> 5.6.0)
+  - PullToRefresher (~> 3.1)
+  - RxSwift (~> 4.5.0)
+  - SnapKit (~> 4.0.1)
+  - SwiftyJSON (~> 3.1.4)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
-    - AFNetworking
-    - Masonry
-    - MJExtension
-    - MJRefresh
-    - SDWebImage
+    - Alamofire
+    - Kingfisher
+    - PullToRefresher
+    - RxSwift
     - SnapKit
+    - SwiftyJSON
 
 SPEC CHECKSUMS:
-  AFNetworking: 8ac6017b94ea105479f7776e5288e48ae9c59bb4
-  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  MJExtension: 5932755f451458eefa24239358817f8d291240c7
-  MJRefresh: b48380ae2b927b46c4ef000de9adb8dc748e1df7
-  SDWebImage: de4d90b5bff3571eae7bd16202b1f43135409fa5
-  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+  Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  Kingfisher: 1a50df6880a60bae26f3e21a0df3d17b892f5e0b
+  PullToRefresher: ec8c1942bd61bb512ff520c49f9f00903cfa86c7
+  RxSwift: f172070dfd1a93d70a9ab97a5a01166206e1c575
+  SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: 4fbc18618a0dbc19da44e6d4c94c35f7c529be73
+PODFILE CHECKSUM: 788cbfc5774716a1b1279416e1d781ad9d7f11f8
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.7.4
