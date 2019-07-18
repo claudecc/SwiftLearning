@@ -18,7 +18,7 @@ class XDNetwork: NSObject {
     /**
      *  网络请求失败闭包:(回调失败结果)
      */
-    typealias NetworkFailure = (_ error:NSError) -> ()
+    typealias NetworkFailure = (_ error:Error?, _ des:String?) -> ()
     
     /**
      *  网络请求单例
@@ -32,33 +32,46 @@ class XDNetwork: NSObject {
      - parameter success:    成功回调
      - parameter failure:    失败回调
      */
-//    func GET(urlString: String ,parameters: [String : AnyObject]? ,success: NetworkSuccess, failure: NetworkFailure){
-//        /*
-//         responseJSON:申明返回JSON类型数据
-//         你也可以根据实际需求,修改返回下列类型
-//         response
-//         responseData
-//         responseString
-//         responsePropertyList
-//         */
-//        Alamofire.request(.GET, urlString, parameters: parameters).responseJSON { response in
-//
-//            switch response.result {
-//
-//            case .Success(let value):
-//
-//                //回调成功结果
-//                success(value)
-//
-//            case .Failure(let error):
-//
-//                //回调失败结果
-//                failure(error)
-//                debugPrint(error)
-//
-//            }
-//        }
-//    }
+    func GET(urlString: String ,parameters: [String : String]? ,success: @escaping NetworkSuccess, failure: @escaping NetworkFailure){
+        /*
+         responseJSON:申明返回JSON类型数据
+         你也可以根据实际需求,修改返回下列类型
+         response
+         responseData
+         responseString
+         responsePropertyList
+         */
+        var mutableParas = ["refer":"ios","pf_ver":"10.1.0","ver":"3.5","fr":"applestore","an":"1000"]
+        if let paras = parameters {
+            for (key,value) in paras {
+                mutableParas.updateValue(key, forKey: value)
+            }
+        }
+        Alamofire.request(urlString, method: .get, parameters: parameters, encoding: URLEncoding.default, headers: nil).responseJSON { response in
+//            print(response.request)  // 原始的URL请求
+//            print(response.response) // HTTP URL响应
+//            print(response.data)     // 服务器返回的数据
+//            print(response.result)   // 响应序列化结果，在这个闭包里，存储的是JSON数据
+
+            switch response.result.isSuccess {
+            case true:
+                if let result = response.result.value {
+                    success(result as AnyObject)
+                } else {
+//                    print("没有数据")
+                    failure(nil,"没有数据")
+                }
+            case false:
+                if let error = response.result.error {
+                    debugPrint(error)
+                    failure(error,nil)
+                } else {
+//                    print("网络请求出错")
+                    failure(nil,"网络请求出错")
+                }
+            }
+        }
+    }
     
     /**
      POST 请求
@@ -67,8 +80,8 @@ class XDNetwork: NSObject {
      - parameter success:    成功回调
      - parameter failure:    失败回调
      */
-//    func POST(urlString: String ,parameters: [String : AnyObject]? ,success: NetworkSuccess, failure: NetworkFailure) {
-//
+    func POST(urlString: String ,parameters: [String : String]? ,success: @escaping NetworkSuccess, failure: @escaping NetworkFailure) {
+
 //        Alamofire.request(.POST, urlString, parameters: parameters).responseJSON { response in
 //
 //            switch response.result {
@@ -86,34 +99,41 @@ class XDNetwork: NSObject {
 //
 //            }
 //        }
-//    }
+        Alamofire.request(urlString, method: .post, parameters: parameters, encoding: URLEncoding.default, headers: nil).responseJSON { response in
+            
+            switch response.result.isSuccess {
+            case true:
+                if let result = response.result.value {
+                    success(result as AnyObject)
+                } else {
+                    print("没有数据")
+                    failure(nil,"没有数据")
+                }
+            case false:
+                if let error = response.result.error {
+                    debugPrint(error)
+                    failure(error,nil)
+                } else {
+                    print("网络请求出错")
+                    failure(nil,"网络请求出错")
+                }
+            }
+        }
+
+    }
     
 }
 
 /**
  调用
- //MARK: - GET请求
- XHNetwork.shareNetwork.GET(URL_TEST, parameters: nil, success: { (response) in
- 
- //成功
- debugPrint(response)
- 
- }) { (error) in
- 
- //失败
- debugPrint(error)
+ XDNetwork.shareNetwork.GET(urlString: XDInterface.bannerUrl, parameters: nil, success: { (result) in
+ print(result)
+ if let dict = result as? Dictionary<String, AnyObject> {
+ if let message = dict["message"] {
+ print(message)
  }
+ }
+ }) { (error, text) in
  
- //MARK: - POST请求
- let dic = ["name":"zhang","phone":"10010"]
- XHNetwork.shareNetwork.POST(URL_TEST, parameters: dic, success: { (response) in
- 
- //成功
- debugPrint(response)
- 
- }) { (error) in
- 
- //失败
- debugPrint(error)
  }
  */
