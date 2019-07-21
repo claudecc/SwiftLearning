@@ -7,13 +7,16 @@
 //
 
 import UIKit
+import PullToRefresh
 
 class HomeVC: BaseVC, UITableViewDelegate, UITableViewDataSource {
 
     private var tableView : UITableView!
     private var listArray : NSMutableArray!
     
-    
+    deinit {
+        tableView.removePullToRefresh(at: .top)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +32,22 @@ class HomeVC: BaseVC, UITableViewDelegate, UITableViewDataSource {
         self.view.addSubview(tableView)
         tableView.delegate = self
         tableView.dataSource = self
+        
+        let refresher = PullToRefresh()
+        weak var weakSelf = self
+        tableView.addPullToRefresh(refresher) {
+            DispatchQueue.global(qos: .default).asyncAfter(deadline: DispatchTime.now() + 2, execute: {
+                DispatchQueue.main.async {
+                    weakSelf?.tableView.endRefreshing(at: .top)
+                }
+            })
+//            DispatchQueue.global(qos: .default).async {
+//                sleep(2)
+//                DispatchQueue.main.async {
+//                    weakSelf?.tableView.endRefreshing(at: .top)
+//                }
+//            }
+        }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
