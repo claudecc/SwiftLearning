@@ -9,15 +9,14 @@
 import UIKit
 import Kingfisher
 
+protocol TestViewProtocol : class,NSObjectProtocol { // class表明当前协议只适用于类
+    func TestViewProtocolAction()
+}
+
 class TestView: UIView {
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
-    }
-    */
+    weak var testDelegate:TestViewProtocol?
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.setupUI()
@@ -35,6 +34,18 @@ class TestView: UIView {
 //        imageView.kf.setImage(with: url)
         imageView.kf.setImage(with: url, placeholder: nil, options: nil, progressBlock: nil) { (result) in
             
+        }
+        imageView.isUserInteractionEnabled = true
+        let ges = UITapGestureRecognizer(target: self, action: #selector(TestView.imageViewTapAction))
+        imageView.addGestureRecognizer(ges)
+        
+    }
+    
+    @objc func imageViewTapAction() {
+        if self.testDelegate != nil {
+            if self.testDelegate!.responds(to: Selector("TestViewProtocolAction")) {
+                self.testDelegate?.TestViewProtocolAction()
+            }
         }
     }
     

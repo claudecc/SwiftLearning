@@ -18,14 +18,17 @@ class BaseTabbarVC: UITabBarController {
         let homeVC = HomeVC()
         homeVC.tabBarItem = UITabBarItem(tabBarSystemItem: .topRated, tag: 1)
         homeVC.title = "Home"
+        homeVC.tabBarItem.titlePositionAdjustment = UIOffset.init(horizontal: 0, vertical: -3)
         let homeNav = BaseNavVC(rootViewController: homeVC)
         self.addChildViewController(homeNav)
         
         let meVC = MeVC()
         meVC.tabBarItem = UITabBarItem(tabBarSystemItem: .contacts, tag: 2)
         meVC.title = "Me"
+        meVC.tabBarItem.titlePositionAdjustment = UIOffset.init(horizontal: 0, vertical: -3)
         let meNav = BaseNavVC(rootViewController: meVC)
         self.addChildViewController(meNav)
+        
         
     }
 

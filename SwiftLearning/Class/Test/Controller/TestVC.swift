@@ -7,8 +7,10 @@
 //
 
 import UIKit
+import SnapKit
+import SwiftyJSON
 
-class TestVC: BaseVC {
+class TestVC: BaseVC,TestViewProtocol {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,12 +22,29 @@ class TestVC: BaseVC {
     
     func setupUI() {
         self.title = "Test"
-        let testView = TestView.init(frame: CGRect.init(x: 0, y: 0, width: self.view.width, height: self.view.height))
+        let testView = TestView()
         self.view.addSubview(testView)
+        testView.testDelegate = self
+        testView.snp.makeConstraints { (make) in
+            make.top.equalTo(self.view).offset(80)
+            make.left.equalTo(self.view).offset(20)
+            make.width.height.equalTo(200)
+        }
+        
+        XDNetwork.shareNetwork.GET(urlString: XDInterface.bannerUrl, parameters: nil, success: { (response) in
+            let result = JSON(response)
+            print("message:\(result["message"])")
+        }) { (error, text) in
+            print(text)
+        }
     }
     
     class func classFucntion() {
         
     }
-
+    
+    func TestViewProtocolAction() {
+        print("测试代理")
+    }
+    
 }

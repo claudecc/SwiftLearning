@@ -41,7 +41,7 @@ class XDNetwork: NSObject {
          responseString
          responsePropertyList
          */
-        var mutableParas = ["refer":"ios","pf_ver":"10.1.0","ver":"3.5","fr":"applestore","an":"1000"]
+        var mutableParas = ["refer":"ios","pf_ver":"10.1.0","ver":"3.5","fr":"applestore","an":"200"]
         if let paras = parameters {
             for (key,value) in paras {
                 mutableParas.updateValue(key, forKey: value)

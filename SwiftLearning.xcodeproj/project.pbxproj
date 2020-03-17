@@ -20,6 +20,7 @@
 		E645430B20623D0F0025FB40 /* MeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E645430A20623D0F0025FB40 /* MeVC.swift */; };
 		E645430D20623E5E0025FB40 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E645430C20623E5E0025FB40 /* BaseVC.swift */; };
 		E64CDE22207CA94B00FE2237 /* Interface.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64CDE21207CA94B00FE2237 /* Interface.swift */; };
+		E6573D28242133D1001546F0 /* TestOCTool.m in Sources */ = {isa = PBXBuildFile; fileRef = E6573D27242133D1001546F0 /* TestOCTool.m */; };
 		E681305C206BA59A007986BE /* BannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E681305B206BA59A007986BE /* BannerVC.swift */; };
 		E681305E206BA661007986BE /* SegmentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E681305D206BA661007986BE /* SegmentVC.swift */; };
 		E69D1246206E4D6E001A7F36 /* BannerNormalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69D1245206E4D6E001A7F36 /* BannerNormalCell.swift */; };
@@ -30,6 +31,9 @@
 		E6B36AD722DF3153001DC458 /* XDNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B36AD622DF3153001DC458 /* XDNetwork.swift */; };
 		E6B36AD922E05426001DC458 /* XDInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B36AD822E05426001DC458 /* XDInterface.swift */; };
 		E6B36ADC22E4C648001DC458 /* UIViewOrdinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B36ADB22E4C648001DC458 /* UIViewOrdinate.swift */; };
+		E6B36ADE22ED6D77001DC458 /* TestJsonData.plist in Resources */ = {isa = PBXBuildFile; fileRef = E6B36ADD22ED6D77001DC458 /* TestJsonData.plist */; };
+		E6B36AE122ED6FC4001DC458 /* TestNetWorkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B36AE022ED6FC4001DC458 /* TestNetWorkTool.swift */; };
+		E6B36AE322ED6FD4001DC458 /* TestJsonModelTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B36AE222ED6FD4001DC458 /* TestJsonModelTool.swift */; };
 		E6D4170F2080AED400303490 /* MeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D4170E2080AED400303490 /* MeHeaderView.swift */; };
 		F97AA96D9C5F90B6A870E2CB /* Pods_SwiftLearning.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E739BBD5C66769986F966B9C /* Pods_SwiftLearning.framework */; };
 /* End PBXBuildFile section */
@@ -52,6 +56,9 @@
 		E645430A20623D0F0025FB40 /* MeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeVC.swift; sourceTree = "<group>"; };
 		E645430C20623E5E0025FB40 /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
 		E64CDE21207CA94B00FE2237 /* Interface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interface.swift; sourceTree = "<group>"; };
+		E6573D25242133D0001546F0 /* SwiftLearning-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftLearning-Bridging-Header.h"; sourceTree = "<group>"; };
+		E6573D26242133D1001546F0 /* TestOCTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestOCTool.h; sourceTree = "<group>"; };
+		E6573D27242133D1001546F0 /* TestOCTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestOCTool.m; sourceTree = "<group>"; };
 		E681305B206BA59A007986BE /* BannerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerVC.swift; sourceTree = "<group>"; };
 		E681305D206BA661007986BE /* SegmentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentVC.swift; sourceTree = "<group>"; };
 		E69D1245206E4D6E001A7F36 /* BannerNormalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerNormalCell.swift; sourceTree = "<group>"; };
@@ -62,6 +69,9 @@
 		E6B36AD622DF3153001DC458 /* XDNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDNetwork.swift; sourceTree = "<group>"; };
 		E6B36AD822E05426001DC458 /* XDInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDInterface.swift; sourceTree = "<group>"; };
 		E6B36ADB22E4C648001DC458 /* UIViewOrdinate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewOrdinate.swift; sourceTree = "<group>"; };
+		E6B36ADD22ED6D77001DC458 /* TestJsonData.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = TestJsonData.plist; sourceTree = "<group>"; };
+		E6B36AE022ED6FC4001DC458 /* TestNetWorkTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestNetWorkTool.swift; sourceTree = "<group>"; };
+		E6B36AE222ED6FD4001DC458 /* TestJsonModelTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestJsonModelTool.swift; sourceTree = "<group>"; };
 		E6D4170E2080AED400303490 /* MeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeHeaderView.swift; sourceTree = "<group>"; };
 		E739BBD5C66769986F966B9C /* Pods_SwiftLearning.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftLearning.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -98,6 +108,7 @@
 		E60D332C2265BE8100B3712F /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				E6B36ADF22ED6FA0001DC458 /* Tool */,
 				E60D33302265BEDD00B3712F /* View */,
 				E60D332D2265BE9B00B3712F /* Controller */,
 			);
@@ -175,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				E64542FB205F9B0A0025FB40 /* Assets.xcassets */,
+				E6B36ADD22ED6D77001DC458 /* TestJsonData.plist */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -194,6 +206,7 @@
 			children = (
 				E6454300205F9B0A0025FB40 /* Info.plist */,
 				E61F4E812063A00D00446B0C /* Note */,
+				E6573D25242133D0001546F0 /* SwiftLearning-Bridging-Header.h */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -345,6 +358,17 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
+		E6B36ADF22ED6FA0001DC458 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				E6B36AE022ED6FC4001DC458 /* TestNetWorkTool.swift */,
+				E6B36AE222ED6FD4001DC458 /* TestJsonModelTool.swift */,
+				E6573D26242133D1001546F0 /* TestOCTool.h */,
+				E6573D27242133D1001546F0 /* TestOCTool.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -379,6 +403,7 @@
 				TargetAttributes = {
 					E64542F0205F9B090025FB40 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 1110;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -406,6 +431,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6B36ADE22ED6D77001DC458 /* TestJsonData.plist in Resources */,
 				E61F4E822063A00D00446B0C /* Note in Resources */,
 				E64542FC205F9B0A0025FB40 /* Assets.xcassets in Resources */,
 			);
@@ -470,14 +496,17 @@
 				E6D4170F2080AED400303490 /* MeHeaderView.swift in Sources */,
 				E645430B20623D0F0025FB40 /* MeVC.swift in Sources */,
 				E69D124A206E4E69001A7F36 /* BannerFocusCell.swift in Sources */,
+				E6B36AE322ED6FD4001DC458 /* TestJsonModelTool.swift in Sources */,
 				E681305C206BA59A007986BE /* BannerVC.swift in Sources */,
 				E6B36AD722DF3153001DC458 /* XDNetwork.swift in Sources */,
 				E69D124C206E4E79001A7F36 /* BannerFocusView.swift in Sources */,
 				E645430D20623E5E0025FB40 /* BaseVC.swift in Sources */,
 				E61F4E7E20638A7F00446B0C /* LoginVC.swift in Sources */,
 				E61F4E8020638AC300446B0C /* MyTool.swift in Sources */,
+				E6573D28242133D1001546F0 /* TestOCTool.m in Sources */,
 				E6B36AD922E05426001DC458 /* XDInterface.swift in Sources */,
 				E645430920623A2A0025FB40 /* HomeVC.swift in Sources */,
+				E6B36AE122ED6FC4001DC458 /* TestNetWorkTool.swift in Sources */,
 				E69D124E206E4ED0001A7F36 /* LoadingView.swift in Sources */,
 				E6B36ADC22E4C648001DC458 /* UIViewOrdinate.swift in Sources */,
 				E61F4E70206260A300446B0C /* BaseNavVC.swift in Sources */,
@@ -612,6 +641,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KR5AULFCNL;
 				INFOPLIST_FILE = "$(SRCROOT)/SwiftLearning/Config/Info.plist";
@@ -619,6 +649,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.claudechoi.swiftLearning.SwiftLearning;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ENABLE_BATCH_MODE = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftLearning/ConfigTool/SwiftLearning-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -630,6 +662,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KR5AULFCNL;
 				INFOPLIST_FILE = "$(SRCROOT)/SwiftLearning/Config/Info.plist";
@@ -637,6 +670,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.claudechoi.swiftLearning.SwiftLearning;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ENABLE_BATCH_MODE = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftLearning/ConfigTool/SwiftLearning-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
