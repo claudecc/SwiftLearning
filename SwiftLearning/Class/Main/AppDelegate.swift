@@ -20,7 +20,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         self.window = UIWindow(frame: UIScreen.main.bounds)
+        self.window?.rootViewController = BaseVC()
+        self.window?.makeKeyAndVisible()
         self.checkLogin()
+        
+        UIButton.appearance().isExclusiveTouch = false
         
         return true
     }
@@ -61,12 +65,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             return
         }
         self.window?.rootViewController = LoginVC()
-        self.window?.makeKeyAndVisible()
     }
     
     func setupSystem() {
         self.window?.rootViewController = BaseTabbarVC()
-        self.window?.makeKeyAndVisible()
     }
     
 }

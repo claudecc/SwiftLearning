@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05859C452433342700E63DAD /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05859C442433342700E63DAD /* UIFontExtension.swift */; };
+		05859C472433357900E63DAD /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05859C462433357900E63DAD /* UIButtonExtension.swift */; };
+		05859C4924333EA000E63DAD /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05859C4824333EA000E63DAD /* StringExtension.swift */; };
 		E60D332F2265BED900B3712F /* TestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60D332E2265BED900B3712F /* TestVC.swift */; };
 		E60D33322265BEF600B3712F /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60D33312265BEF600B3712F /* TestView.swift */; };
 		E61F4E70206260A300446B0C /* BaseNavVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61F4E6F206260A300446B0C /* BaseNavVC.swift */; };
@@ -39,6 +42,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		05859C442433342700E63DAD /* UIFontExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFontExtension.swift; sourceTree = "<group>"; };
+		05859C462433357900E63DAD /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
+		05859C4824333EA000E63DAD /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		3DF7536F16B34DEC537ED700 /* Pods-SwiftLearning.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftLearning.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftLearning/Pods-SwiftLearning.debug.xcconfig"; sourceTree = "<group>"; };
 		969C6AE1D2DC761BB401715D /* Pods-SwiftLearning.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftLearning.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftLearning/Pods-SwiftLearning.release.xcconfig"; sourceTree = "<group>"; };
 		E60D332E2265BED900B3712F /* TestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestVC.swift; sourceTree = "<group>"; };
@@ -271,7 +277,10 @@
 		E681305A20689CBD007986BE /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				05859C442433342700E63DAD /* UIFontExtension.swift */,
 				E6B36ADB22E4C648001DC458 /* UIViewOrdinate.swift */,
+				05859C462433357900E63DAD /* UIButtonExtension.swift */,
+				05859C4824333EA000E63DAD /* StringExtension.swift */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -448,18 +457,28 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-SwiftLearning/Pods-SwiftLearning-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/DGElasticPullToRefresh/DGElasticPullToRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/PullToRefresher/PullToRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SQLite.swift/SQLite.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DGElasticPullToRefresh.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PullToRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQLite.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
@@ -501,10 +520,12 @@
 				E6B36AD722DF3153001DC458 /* XDNetwork.swift in Sources */,
 				E69D124C206E4E79001A7F36 /* BannerFocusView.swift in Sources */,
 				E645430D20623E5E0025FB40 /* BaseVC.swift in Sources */,
+				05859C4924333EA000E63DAD /* StringExtension.swift in Sources */,
 				E61F4E7E20638A7F00446B0C /* LoginVC.swift in Sources */,
 				E61F4E8020638AC300446B0C /* MyTool.swift in Sources */,
 				E6573D28242133D1001546F0 /* TestOCTool.m in Sources */,
 				E6B36AD922E05426001DC458 /* XDInterface.swift in Sources */,
+				05859C452433342700E63DAD /* UIFontExtension.swift in Sources */,
 				E645430920623A2A0025FB40 /* HomeVC.swift in Sources */,
 				E6B36AE122ED6FC4001DC458 /* TestNetWorkTool.swift in Sources */,
 				E69D124E206E4ED0001A7F36 /* LoadingView.swift in Sources */,
@@ -515,6 +536,7 @@
 				E681305E206BA661007986BE /* SegmentVC.swift in Sources */,
 				E69D1246206E4D6E001A7F36 /* BannerNormalCell.swift in Sources */,
 				E60D33322265BEF600B3712F /* TestView.swift in Sources */,
+				05859C472433357900E63DAD /* UIButtonExtension.swift in Sources */,
 				E64542F5205F9B0A0025FB40 /* AppDelegate.swift in Sources */,
 				E60D332F2265BED900B3712F /* TestVC.swift in Sources */,
 				E69D1248206E4D90001A7F36 /* BannerNormalView.swift in Sources */,
@@ -649,7 +671,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.claudechoi.swiftLearning.SwiftLearning;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ENABLE_BATCH_MODE = NO;
-				SWIFT_OBJC_BRIDGING_HEADER = "SwiftLearning/ConfigTool/SwiftLearning-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftLearning/Config/SwiftLearning-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -670,7 +692,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.claudechoi.swiftLearning.SwiftLearning;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ENABLE_BATCH_MODE = NO;
-				SWIFT_OBJC_BRIDGING_HEADER = "SwiftLearning/ConfigTool/SwiftLearning-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftLearning/Config/SwiftLearning-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -111,6 +111,17 @@ class MyTool: NSObject {
         }
     }
     
+    func dateToTime(seconds:TimeInterval) -> String {
+        print("\(seconds)") // 1462861373.10082
+        let confromTimesp = NSDate.init(timeIntervalSince1970: seconds)
+        print("\(confromTimesp)") //2016-05-10 06:22:53 +0000 这个是UTC时间，没算时区
+        let dateFormate = DateFormatter.init()
+        dateFormate.dateFormat = "MM-dd HH:mm" //mm必须是小写
+        let time = dateFormate.string(from: confromTimesp as Date)
+        print("\(time)") // 05-10 14:22
+        return time;
+    }
+    
     // 递归找最上面的VC
     @objc class func topViewController() -> UIViewController? {
         return self.topViewControllerWithRootViewController(viewController: self.getCurrentWindow()?.rootViewController)
