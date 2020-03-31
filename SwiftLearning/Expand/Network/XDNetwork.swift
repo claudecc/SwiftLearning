@@ -9,6 +9,12 @@
 import UIKit
 import Alamofire
 
+#if DEBUG         // 调试版本
+let appURL = "www.baidu.com"
+#else             // 发布版本
+let appURL = "offical"
+#endif
+
 class XDNetwork: NSObject {
     /**
      *  网络请求成功闭包:(回调成功结果)

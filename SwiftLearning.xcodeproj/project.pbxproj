@@ -10,6 +10,7 @@
 		05859C452433342700E63DAD /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05859C442433342700E63DAD /* UIFontExtension.swift */; };
 		05859C472433357900E63DAD /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05859C462433357900E63DAD /* UIButtonExtension.swift */; };
 		05859C4924333EA000E63DAD /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05859C4824333EA000E63DAD /* StringExtension.swift */; };
+		05859C4B2433523000E63DAD /* NSObjectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05859C4A2433523000E63DAD /* NSObjectExtension.swift */; };
 		E60D332F2265BED900B3712F /* TestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60D332E2265BED900B3712F /* TestVC.swift */; };
 		E60D33322265BEF600B3712F /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60D33312265BEF600B3712F /* TestView.swift */; };
 		E61F4E70206260A300446B0C /* BaseNavVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61F4E6F206260A300446B0C /* BaseNavVC.swift */; };
@@ -45,6 +46,7 @@
 		05859C442433342700E63DAD /* UIFontExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFontExtension.swift; sourceTree = "<group>"; };
 		05859C462433357900E63DAD /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
 		05859C4824333EA000E63DAD /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		05859C4A2433523000E63DAD /* NSObjectExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObjectExtension.swift; sourceTree = "<group>"; };
 		3DF7536F16B34DEC537ED700 /* Pods-SwiftLearning.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftLearning.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftLearning/Pods-SwiftLearning.debug.xcconfig"; sourceTree = "<group>"; };
 		969C6AE1D2DC761BB401715D /* Pods-SwiftLearning.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftLearning.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftLearning/Pods-SwiftLearning.release.xcconfig"; sourceTree = "<group>"; };
 		E60D332E2265BED900B3712F /* TestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestVC.swift; sourceTree = "<group>"; };
@@ -281,6 +283,7 @@
 				E6B36ADB22E4C648001DC458 /* UIViewOrdinate.swift */,
 				05859C462433357900E63DAD /* UIButtonExtension.swift */,
 				05859C4824333EA000E63DAD /* StringExtension.swift */,
+				05859C4A2433523000E63DAD /* NSObjectExtension.swift */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -534,6 +537,7 @@
 				E645430720623A080025FB40 /* BaseTabbarVC.swift in Sources */,
 				E64CDE22207CA94B00FE2237 /* Interface.swift in Sources */,
 				E681305E206BA661007986BE /* SegmentVC.swift in Sources */,
+				05859C4B2433523000E63DAD /* NSObjectExtension.swift in Sources */,
 				E69D1246206E4D6E001A7F36 /* BannerNormalCell.swift in Sources */,
 				E60D33322265BEF600B3712F /* TestView.swift in Sources */,
 				05859C472433357900E63DAD /* UIButtonExtension.swift in Sources */,

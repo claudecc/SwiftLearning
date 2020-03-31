@@ -8,6 +8,12 @@
 
 import UIKit
 
+struct ButtonExtensionKey {
+    static var touchActionKey : String = "touchActionKey"
+}
+
+typealias ButtonTouchClosure = (UIButton)->()
+
 extension UIButton {
     
     public enum kImagePosition : Int {
@@ -73,11 +79,21 @@ extension UIButton {
             self.imageEdgeInsets = UIEdgeInsets(top: imageOffsetY, left: imageOffsetX, bottom: -imageOffsetY, right: -imageOffsetX)
             self.titleEdgeInsets = UIEdgeInsets(top: -labelOffsetY, left: -labelOffsetX, bottom: labelOffsetY, right: labelOffsetX)
             self.contentEdgeInsets = UIEdgeInsets(top: changedHeight-imageOffsetY, left: -changedWidth/2, bottom: imageOffsetY, right: -changedWidth/2)
-        default:
-            print("none position")
+//        default:
+//            print("none position")
         }
         
-        
-        
     }
+    
+    func addTouchAction(action:ButtonTouchClosure) {
+        self.addTarget(self, action: #selector(clickAction(sender:)), for: .touchUpInside)
+        objc_setAssociatedObject(self, &ButtonExtensionKey.touchActionKey, action as AnyObject, .OBJC_ASSOCIATION_COPY_NONATOMIC)
+    }
+    
+    @objc private func clickAction(sender:UIButton) {
+        if let action:ButtonTouchClosure = objc_getAssociatedObject(self, &ButtonExtensionKey.touchActionKey) as? ButtonTouchClosure {
+            action(self)
+        }
+    }
+    
 }

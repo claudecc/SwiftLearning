@@ -12,7 +12,6 @@ class MeHeaderView: UIView {
     
     override init(frame: CGRect) {
         // init
-        UITableView
         
         // super
         super.init(frame: frame)
