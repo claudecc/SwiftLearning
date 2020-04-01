@@ -6,18 +6,25 @@ use_frameworks!
 
 target 'SwiftLearning' do
 	
+  # layout
   pod 'SnapKit', '~> 4.0.1'
-	pod 'Alamofire', '~> 4.4.0'
+  # network
+  pod 'Alamofire', '~> 4.4.0'
+  pod 'Moya', '~> 13.0.1'
+  # image
+  pod 'Kingfisher', '~> 5.6.0'
   # json -> dict
-	pod 'SwiftyJSON', '~> 5.0.0'
-	pod 'Kingfisher', '~> 5.6.0'
-	pod 'RxSwift', '~> 4.5.0'
-	pod 'PullToRefresher', '~> 3.1'
-  pod 'SQLite.swift', '~> 0.12.2'
-  pod 'RealmSwift'
+  pod 'SwiftyJSON', '~> 5.0.0'
   # json -> model
-  pod 'ObjectMapper'
-  pod 'DGElasticPullToRefresh'
+  pod 'ObjectMapper', '~> 3.5.1'
+  pod 'HandyJSON', '~> 5.0.1'
   
+  pod 'RxSwift', '~> 4.5.0'
+  # refresh
+  pod 'PullToRefresher', '~> 3.1'
+  pod 'DGElasticPullToRefresh', '~> 1.1'
+  # storage
+  pod 'SQLite.swift', '~> 0.12.2'
+  pod 'RealmSwift', '~> 4.1.1'
   
 end

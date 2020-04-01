@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		057F1DA324346A9600FCF759 /* MeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057F1DA224346A9600FCF759 /* MeViewModel.swift */; };
+		057F1DA524347B7000FCF759 /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057F1DA424347B7000FCF759 /* UITextFieldExtension.swift */; };
+		057F1DA924347F5D00FCF759 /* UITextViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057F1DA824347F5D00FCF759 /* UITextViewExtension.swift */; };
+		057F1DAB24349DA300FCF759 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057F1DAA24349DA300FCF759 /* UIImageViewExtension.swift */; };
 		05859C452433342700E63DAD /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05859C442433342700E63DAD /* UIFontExtension.swift */; };
 		05859C472433357900E63DAD /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05859C462433357900E63DAD /* UIButtonExtension.swift */; };
 		05859C4924333EA000E63DAD /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05859C4824333EA000E63DAD /* StringExtension.swift */; };
@@ -43,6 +47,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		057F1DA224346A9600FCF759 /* MeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeViewModel.swift; sourceTree = "<group>"; };
+		057F1DA424347B7000FCF759 /* UITextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
+		057F1DA824347F5D00FCF759 /* UITextViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextViewExtension.swift; sourceTree = "<group>"; };
+		057F1DAA24349DA300FCF759 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 		05859C442433342700E63DAD /* UIFontExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFontExtension.swift; sourceTree = "<group>"; };
 		05859C462433357900E63DAD /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
 		05859C4824333EA000E63DAD /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
@@ -96,6 +104,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		057F1DA124346A8700FCF759 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				057F1DA224346A9600FCF759 /* MeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		7DDCFD3DBE33A93534C9D285 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -165,6 +181,7 @@
 		E61F4E732063849300446B0C /* Me */ = {
 			isa = PBXGroup;
 			children = (
+				057F1DA124346A8700FCF759 /* ViewModel */,
 				E6813064206BA6E2007986BE /* Controller */,
 				E6813063206BA6DC007986BE /* Model */,
 				E6813062206BA6D6007986BE /* View */,
@@ -284,6 +301,9 @@
 				05859C462433357900E63DAD /* UIButtonExtension.swift */,
 				05859C4824333EA000E63DAD /* StringExtension.swift */,
 				05859C4A2433523000E63DAD /* NSObjectExtension.swift */,
+				057F1DA424347B7000FCF759 /* UITextFieldExtension.swift */,
+				057F1DA824347F5D00FCF759 /* UITextViewExtension.swift */,
+				057F1DAA24349DA300FCF759 /* UIImageViewExtension.swift */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -461,11 +481,14 @@
 				"${PODS_ROOT}/Target Support Files/Pods-SwiftLearning/Pods-SwiftLearning-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/DGElasticPullToRefresh/DGElasticPullToRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/PullToRefresher/PullToRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SQLite.swift/SQLite.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
@@ -475,11 +498,14 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DGElasticPullToRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PullToRefresh.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQLite.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
@@ -522,13 +548,17 @@
 				E681305C206BA59A007986BE /* BannerVC.swift in Sources */,
 				E6B36AD722DF3153001DC458 /* XDNetwork.swift in Sources */,
 				E69D124C206E4E79001A7F36 /* BannerFocusView.swift in Sources */,
+				057F1DA524347B7000FCF759 /* UITextFieldExtension.swift in Sources */,
 				E645430D20623E5E0025FB40 /* BaseVC.swift in Sources */,
 				05859C4924333EA000E63DAD /* StringExtension.swift in Sources */,
 				E61F4E7E20638A7F00446B0C /* LoginVC.swift in Sources */,
+				057F1DA324346A9600FCF759 /* MeViewModel.swift in Sources */,
 				E61F4E8020638AC300446B0C /* MyTool.swift in Sources */,
 				E6573D28242133D1001546F0 /* TestOCTool.m in Sources */,
 				E6B36AD922E05426001DC458 /* XDInterface.swift in Sources */,
+				057F1DA924347F5D00FCF759 /* UITextViewExtension.swift in Sources */,
 				05859C452433342700E63DAD /* UIFontExtension.swift in Sources */,
+				057F1DAB24349DA300FCF759 /* UIImageViewExtension.swift in Sources */,
 				E645430920623A2A0025FB40 /* HomeVC.swift in Sources */,
 				E6B36AE122ED6FC4001DC458 /* TestNetWorkTool.swift in Sources */,
 				E69D124E206E4ED0001A7F36 /* LoadingView.swift in Sources */,

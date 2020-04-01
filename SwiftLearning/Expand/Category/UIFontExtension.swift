@@ -10,7 +10,7 @@ import UIKit
 
 extension UIFont {
     
-    class func pingfangLightSize(size:CGFloat) -> UIFont {
+    class func pingfangLight(_ size:CGFloat) -> UIFont {
         var font = UIFont.init(name: "PingfangSC-Light", size: size)
         if font == nil {
             font = UIFont.systemFont(ofSize: size)
@@ -18,7 +18,7 @@ extension UIFont {
         return font!
     }
     
-    class func pingfangThinSize(size:CGFloat) -> UIFont {
+    class func pingfangThin(_ size:CGFloat) -> UIFont {
         var font = UIFont.init(name: "PingfangSC-Thin", size: size)
         if font == nil {
             font = UIFont.systemFont(ofSize: size)
@@ -26,7 +26,7 @@ extension UIFont {
         return font!
     }
     
-    class func pingfangRegularSize(size:CGFloat) -> UIFont {
+    class func pingfangRegular(_ size:CGFloat) -> UIFont {
         var font = UIFont.init(name: "PingfangSC-Regular", size: size)
         if font == nil {
             font = UIFont.systemFont(ofSize: size)
@@ -34,7 +34,7 @@ extension UIFont {
         return font!
     }
     
-    class func pingfangSemiboldSize(size:CGFloat) -> UIFont {
+    class func pingfangSemibold(_ size:CGFloat) -> UIFont {
         var font = UIFont.init(name: "PingfangSC-Semibold", size: size)
         if font == nil {
             font = UIFont.systemFont(ofSize: size)
@@ -42,7 +42,7 @@ extension UIFont {
         return font!
     }
     
-    class func pingfangMediumSize(size:CGFloat) -> UIFont {
+    class func pingfangMedium(_ size:CGFloat) -> UIFont {
         var font = UIFont.init(name: "PingfangSC-Medium", size: size)
         if font == nil {
             font = UIFont.systemFont(ofSize: size)
@@ -50,7 +50,7 @@ extension UIFont {
         return font!
     }
     
-    class func helveticaSize(size:CGFloat) -> UIFont {
+    class func helvetica(_ size:CGFloat) -> UIFont {
         var font = UIFont.init(name: "Helvetica", size: size)
         if font == nil {
             font = UIFont.systemFont(ofSize: size)

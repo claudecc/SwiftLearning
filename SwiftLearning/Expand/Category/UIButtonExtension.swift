@@ -85,7 +85,7 @@ extension UIButton {
         
     }
     
-    func addTouchAction(action:ButtonTouchClosure) {
+    func addTouchAction(_ action:ButtonTouchClosure) {
         self.addTarget(self, action: #selector(clickAction(sender:)), for: .touchUpInside)
         objc_setAssociatedObject(self, &ButtonExtensionKey.touchActionKey, action as AnyObject, .OBJC_ASSOCIATION_COPY_NONATOMIC)
     }
