@@ -64,7 +64,8 @@ class HomeVC: BaseVC, UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         if indexPath.row == 0 {
-            XDDownloadImageManager.test()
+//            XDDownloadImageManager.test()
+            XDArrayTool.test()
             return
         }
         let dict:NSDictionary = self.listArray.object(at: indexPath.row) as! NSDictionary
