@@ -15,6 +15,8 @@
 		05859C472433357900E63DAD /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05859C462433357900E63DAD /* UIButtonExtension.swift */; };
 		05859C4924333EA000E63DAD /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05859C4824333EA000E63DAD /* StringExtension.swift */; };
 		05859C4B2433523000E63DAD /* NSObjectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05859C4A2433523000E63DAD /* NSObjectExtension.swift */; };
+		05BEF7732466885B003BC29A /* XDDownloadImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BEF7722466885B003BC29A /* XDDownloadImageManager.swift */; };
+		05BEF7782466BED8003BC29A /* XDArrayTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 05BEF7772466BED8003BC29A /* XDArrayTool.m */; };
 		E60D332F2265BED900B3712F /* TestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60D332E2265BED900B3712F /* TestVC.swift */; };
 		E60D33322265BEF600B3712F /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60D33312265BEF600B3712F /* TestView.swift */; };
 		E61F4E70206260A300446B0C /* BaseNavVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61F4E6F206260A300446B0C /* BaseNavVC.swift */; };
@@ -55,6 +57,9 @@
 		05859C462433357900E63DAD /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
 		05859C4824333EA000E63DAD /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		05859C4A2433523000E63DAD /* NSObjectExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObjectExtension.swift; sourceTree = "<group>"; };
+		05BEF7722466885B003BC29A /* XDDownloadImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDDownloadImageManager.swift; sourceTree = "<group>"; };
+		05BEF7762466BED8003BC29A /* XDArrayTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XDArrayTool.h; sourceTree = "<group>"; };
+		05BEF7772466BED8003BC29A /* XDArrayTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XDArrayTool.m; sourceTree = "<group>"; };
 		3DF7536F16B34DEC537ED700 /* Pods-SwiftLearning.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftLearning.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftLearning/Pods-SwiftLearning.debug.xcconfig"; sourceTree = "<group>"; };
 		969C6AE1D2DC761BB401715D /* Pods-SwiftLearning.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftLearning.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftLearning/Pods-SwiftLearning.release.xcconfig"; sourceTree = "<group>"; };
 		E60D332E2265BED900B3712F /* TestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestVC.swift; sourceTree = "<group>"; };
@@ -112,6 +117,16 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		05BEF76F24668820003BC29A /* StoreHub */ = {
+			isa = PBXGroup;
+			children = (
+				05BEF7722466885B003BC29A /* XDDownloadImageManager.swift */,
+				05BEF7762466BED8003BC29A /* XDArrayTool.h */,
+				05BEF7772466BED8003BC29A /* XDArrayTool.m */,
+			);
+			path = StoreHub;
+			sourceTree = "<group>";
+		};
 		7DDCFD3DBE33A93534C9D285 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -158,6 +173,7 @@
 		E61F4E712063847D00446B0C /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				05BEF76F24668820003BC29A /* StoreHub */,
 				E60D332C2265BE8100B3712F /* Test */,
 				E61F4E75206384F400446B0C /* Base */,
 				E61F4E74206384E700446B0C /* Main */,
@@ -552,11 +568,13 @@
 				E645430D20623E5E0025FB40 /* BaseVC.swift in Sources */,
 				05859C4924333EA000E63DAD /* StringExtension.swift in Sources */,
 				E61F4E7E20638A7F00446B0C /* LoginVC.swift in Sources */,
+				05BEF7732466885B003BC29A /* XDDownloadImageManager.swift in Sources */,
 				057F1DA324346A9600FCF759 /* MeViewModel.swift in Sources */,
 				E61F4E8020638AC300446B0C /* MyTool.swift in Sources */,
 				E6573D28242133D1001546F0 /* TestOCTool.m in Sources */,
 				E6B36AD922E05426001DC458 /* XDInterface.swift in Sources */,
 				057F1DA924347F5D00FCF759 /* UITextViewExtension.swift in Sources */,
+				05BEF7782466BED8003BC29A /* XDArrayTool.m in Sources */,
 				05859C452433342700E63DAD /* UIFontExtension.swift in Sources */,
 				057F1DAB24349DA300FCF759 /* UIImageViewExtension.swift in Sources */,
 				E645430920623A2A0025FB40 /* HomeVC.swift in Sources */,
@@ -699,7 +717,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KR5AULFCNL;
+				DEVELOPMENT_TEAM = 999F4QJ962;
 				INFOPLIST_FILE = "$(SRCROOT)/SwiftLearning/Config/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.claudechoi.swiftLearning.SwiftLearning;
