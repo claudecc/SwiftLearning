@@ -19,6 +19,8 @@
 + (void)deleteAllObjectInArray:(NSMutableArray *)array {
     
     for (NSInteger i = (array.count - 1); i >= 0; i--) {
+        NSString *string = [array objectAtIndex:i];
+        NSLog(@"we are going to delete string(%@)",string);
         [array removeObjectAtIndex:i];
     }
     
