@@ -33,6 +33,7 @@
 		E6573D28242133D1001546F0 /* TestOCTool.m in Sources */ = {isa = PBXBuildFile; fileRef = E6573D27242133D1001546F0 /* TestOCTool.m */; };
 		E681305C206BA59A007986BE /* BannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E681305B206BA59A007986BE /* BannerVC.swift */; };
 		E681305E206BA661007986BE /* SegmentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E681305D206BA661007986BE /* SegmentVC.swift */; };
+		E68799AC2479913F00F5BB6C /* SLinkListTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68799AB2479913F00F5BB6C /* SLinkListTool.swift */; };
 		E69D1246206E4D6E001A7F36 /* BannerNormalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69D1245206E4D6E001A7F36 /* BannerNormalCell.swift */; };
 		E69D1248206E4D90001A7F36 /* BannerNormalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69D1247206E4D90001A7F36 /* BannerNormalView.swift */; };
 		E69D124A206E4E69001A7F36 /* BannerFocusCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69D1249206E4E69001A7F36 /* BannerFocusCell.swift */; };
@@ -82,6 +83,7 @@
 		E6573D27242133D1001546F0 /* TestOCTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestOCTool.m; sourceTree = "<group>"; };
 		E681305B206BA59A007986BE /* BannerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerVC.swift; sourceTree = "<group>"; };
 		E681305D206BA661007986BE /* SegmentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentVC.swift; sourceTree = "<group>"; };
+		E68799AB2479913F00F5BB6C /* SLinkListTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SLinkListTool.swift; sourceTree = "<group>"; };
 		E69D1245206E4D6E001A7F36 /* BannerNormalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerNormalCell.swift; sourceTree = "<group>"; };
 		E69D1247206E4D90001A7F36 /* BannerNormalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerNormalView.swift; sourceTree = "<group>"; };
 		E69D1249206E4E69001A7F36 /* BannerFocusCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerFocusCell.swift; sourceTree = "<group>"; };
@@ -293,6 +295,7 @@
 		E64542F3205F9B090025FB40 /* SwiftLearning */ = {
 			isa = PBXGroup;
 			children = (
+				E68799A92479909D00F5BB6C /* Study */,
 				E61F4E79206385E900446B0C /* Config */,
 				E61F4E712063847D00446B0C /* Class */,
 				E61F4E772063857B00446B0C /* Expand */,
@@ -397,6 +400,22 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		E68799A92479909D00F5BB6C /* Study */ = {
+			isa = PBXGroup;
+			children = (
+				E68799AA247990A400F5BB6C /* LinkList */,
+			);
+			path = Study;
+			sourceTree = "<group>";
+		};
+		E68799AA247990A400F5BB6C /* LinkList */ = {
+			isa = PBXGroup;
+			children = (
+				E68799AB2479913F00F5BB6C /* SLinkListTool.swift */,
+			);
+			path = LinkList;
+			sourceTree = "<group>";
+		};
 		E6B36AD522DF3110001DC458 /* Network */ = {
 			isa = PBXGroup;
 			children = (
@@ -429,6 +448,7 @@
 				E64542EE205F9B090025FB40 /* Frameworks */,
 				E64542EF205F9B090025FB40 /* Resources */,
 				78C1DBBC77F293ABBBF46084 /* [CP] Embed Pods Frameworks */,
+				FEA5B552CD48497E847D9B76 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -550,6 +570,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		FEA5B552CD48497E847D9B76 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftLearning/Pods-SwiftLearning-resources.sh",
+				"${PODS_ROOT}/BaiduMapKit/BaiduMapKit/BaiduMapAPI_Map.framework/mapapi.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/mapapi.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftLearning/Pods-SwiftLearning-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -586,6 +624,7 @@
 				E64CDE22207CA94B00FE2237 /* Interface.swift in Sources */,
 				E681305E206BA661007986BE /* SegmentVC.swift in Sources */,
 				05859C4B2433523000E63DAD /* NSObjectExtension.swift in Sources */,
+				E68799AC2479913F00F5BB6C /* SLinkListTool.swift in Sources */,
 				E69D1246206E4D6E001A7F36 /* BannerNormalCell.swift in Sources */,
 				E60D33322265BEF600B3712F /* TestView.swift in Sources */,
 				05859C472433357900E63DAD /* UIButtonExtension.swift in Sources */,

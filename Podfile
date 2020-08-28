@@ -5,7 +5,9 @@ platform:ios,'10.0'
 use_frameworks!
 
 target 'SwiftLearning' do
-	
+  
+  # Map
+  pod 'BaiduMapKit', '~> 5.4.0'
   # layout
   pod 'SnapKit', '~> 4.0.1'
   # network
@@ -16,12 +18,12 @@ target 'SwiftLearning' do
   # json -> dict
   pod 'SwiftyJSON', '~> 5.0.0'
   # json -> model
-  pod 'ObjectMapper', '~> 3.5.1'
-  pod 'HandyJSON', '~> 5.0.1'
+  pod 'ObjectMapper', '~> 3.5.3'
+  pod 'HandyJSON', '~> 5.0.2'
   
   pod 'RxSwift', '~> 4.5.0'
   # refresh
-  pod 'PullToRefresher', '~> 3.1'
+  pod 'PullToRefresher', '~> 3.3'
   pod 'DGElasticPullToRefresh', '~> 1.1'
   # storage
   pod 'SQLite.swift', '~> 0.12.2'

@@ -1,15 +1,16 @@
 PODS:
   - Alamofire (4.4.0)
+  - BaiduMapKit (5.4.0)
   - DGElasticPullToRefresh (1.1)
-  - HandyJSON (5.0.1)
+  - HandyJSON (5.0.2)
   - Kingfisher (5.6.0)
   - Moya (13.0.1):
     - Moya/Core (= 13.0.1)
   - Moya/Core (13.0.1):
     - Alamofire (~> 4.1)
     - Result (~> 4.1)
-  - ObjectMapper (3.5.1)
-  - PullToRefresher (3.1)
+  - ObjectMapper (3.5.3)
+  - PullToRefresher (3.3)
   - Realm (4.1.1):
     - Realm/Headers (= 4.1.1)
   - Realm/Headers (4.1.1)
@@ -25,12 +26,13 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire (~> 4.4.0)
+  - BaiduMapKit (~> 5.4.0)
   - DGElasticPullToRefresh (~> 1.1)
-  - HandyJSON (~> 5.0.1)
+  - HandyJSON (~> 5.0.2)
   - Kingfisher (~> 5.6.0)
   - Moya (~> 13.0.1)
-  - ObjectMapper (~> 3.5.1)
-  - PullToRefresher (~> 3.1)
+  - ObjectMapper (~> 3.5.3)
+  - PullToRefresher (~> 3.3)
   - RealmSwift (~> 4.1.1)
   - RxSwift (~> 4.5.0)
   - SnapKit (~> 4.0.1)
@@ -40,6 +42,7 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - Alamofire
+    - BaiduMapKit
     - DGElasticPullToRefresh
     - HandyJSON
     - Kingfisher
@@ -56,12 +59,13 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  BaiduMapKit: 40a4382633859bd569d40da9f9a2e98a277dd28b
   DGElasticPullToRefresh: 28f11a6026302a90f8ffebbc6e24748e584dddd3
-  HandyJSON: d45b8415c501e3affc59ca9762c1197ff0feb646
+  HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
   Kingfisher: 1a50df6880a60bae26f3e21a0df3d17b892f5e0b
   Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
-  ObjectMapper: 70187b8941977c62ccfb423caf6b50be405cabf0
-  PullToRefresher: ec8c1942bd61bb512ff520c49f9f00903cfa86c7
+  ObjectMapper: 97111c97e054a6ee25917662106689f0b4127b37
+  PullToRefresher: 6fc2ab6494caf949bcf6f0223ffd23f9d21a06f6
   Realm: 25f0a8244cbb1c2271c922963ea8666fc2d8104d
   RealmSwift: 9e2657b33764f80e4a4dffd6d440e24715782052
   Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
@@ -70,6 +74,6 @@ SPEC CHECKSUMS:
   SQLite.swift: d2b4642190917051ce6bd1d49aab565fe794eea3
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
 
-PODFILE CHECKSUM: f3583f3928760feb3ceb03cbea65923e8fec6d20
+PODFILE CHECKSUM: 40b52617f9987c38313474608f6c29d6e8f3978e
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.9.1
